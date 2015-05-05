@@ -1,0 +1,45 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+body {
+    background: #F1F1F1 none repeat scroll 0% 0%;
+    color: #333;
+    min-height: 300px;
+    overflow-x: hidden;
+    width: 100%;
+    height:100%;
+}
+body, h1, a {
+    font-weight: 400;
+}
+h1 {
+    color: #4CB1FF;
+    border-bottom: 1px solid #E5E4E5;
+}
+.center {
+    width:100%;
+    text-align:center;
+}
+.nome {
+    position: relative;
+    top: -40px;
+}
+.imageblock {
+    background: #E0E0E0 none repeat scroll 0% 0%;
+    margin: 0 auto;
+    padding:10px;
+    border-bottom: 1px solid #E5E4E5;
+    border-top: 1px solid #E5E4E5;
+}
+.btn {
+    background: #66D071 none repeat scroll 0% 0%;
+    border-bottom: 1px solid #4D8D32;
+    line-height: 1;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    text-decoration: none;
+    display:inline-block;
+    width: auto;
+    font-size: 15px;
+}
