@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Fira Sans";
+    src: url("FiraSans-Regular.woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Fira Sans";
+    src: url("FiraSans-Medium.woff");
+    font-weight: 500;
+}
+
 * {
     font-family: 'Fira Sans', sans-serif;
 }
@@ -42,4 +53,19 @@ h1 {
     display:inline-block;
     width: auto;
     font-size: 15px;
+}
+.list-inline {
+    margin: 1.2rem;
+    list-style: none;
+}
+.no-style {
+    list-style: none;
+}
+.list-inline li {
+    display: inline-block;
+}
+.market{
+    margin-left:2.5rem;
+    background: url("market.png") no-repeat left top;
+    padding: 8px 0px 8px 40px;
 }
