@@ -27,6 +27,14 @@ h1 {
     color: #4CB1FF;
     border-bottom: 1px solid #E5E4E5;
 }
+section {
+    clear:both;
+}
+footer{
+    margin:10px;
+    clear: both;
+    height: 10px;
+}
 .center {
     width:100%;
     text-align:center;
@@ -68,4 +76,12 @@ h1 {
     margin-left:2.5rem;
     background: url("market.png") no-repeat left top;
     padding: 8px 0px 8px 40px;
+}
+.no-author{
+    margin-left:2.5rem;
+    padding: 8px 0px 8px 40px;
+}
+.align-left li{
+    float:left;
+    clear:both;
 }
