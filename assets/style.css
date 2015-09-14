@@ -27,6 +27,9 @@ h1 {
     color: #4CB1FF;
     border-bottom: 1px solid #E5E4E5;
 }
+a {
+    text-decoration:none;
+}
 section {
     clear:both;
 }
