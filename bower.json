@@ -1,0 +1,27 @@
+{
+  "name": "mozilla-italia",
+  "homepage": "https://github.com/predorock/mozillaitalia.github.io",
+  "authors": [
+    "Marco Predari <predorock@gmail.com>"
+  ],
+  "description": "Pagine promozionali per gli eventi su mozilla in italia",
+  "main": "index.htm",
+  "moduleType": [],
+  "keywords": [
+    "Mozilla",
+    "Italia"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fetch": "~0.10.1",
+    "es6-promise": "~3.0.2"
+  }
+}
