@@ -21,9 +21,9 @@ function init(){
         var item = document.createElement("li");
         item.classList.add('no-style');
         if(cats[i].apps[j].author != "")
-          item.innerHTML = "<span class='market'></span><a class='btn' target=\'_blank\' href=\""+cats[i].apps[j].href+"\">"+cats[i].apps[j].name+"</a> "+cats[i].apps[j].description+" by "+cats[i].apps[j].author;
+          item.innerHTML = "<span class='market'></span><a class='btn btn-green' target=\'_blank\' href=\""+cats[i].apps[j].href+"\">"+cats[i].apps[j].name+"</a> "+cats[i].apps[j].description+" by "+cats[i].apps[j].author;
         else
-          item.innerHTML = "<span class='no-author'><a class='btn' target=\'_blank\' href=\""+cats[i].apps[j].href+"\">"+cats[i].apps[j].name+"</a> "+cats[i].apps[j].description;
+          item.innerHTML = "<span class='no-author'><a class='btn btn-green' target=\'_blank\' href=\""+cats[i].apps[j].href+"\">"+cats[i].apps[j].name+"</a> "+cats[i].apps[j].description;
         list.appendChild(item);
       }
       sec.appendChild(list);
