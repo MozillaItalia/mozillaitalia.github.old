@@ -1,20 +1,38 @@
 /**
  * Created by predo1 on 08/11/15.
  */
+
+var Helper = (function(){
+    return{
+        isValid : function(el){
+            return el != null && el != undefined;
+        }
+    }
+})();
+
 var API = (function(){
+
+    var configFactory = {
+        limit : 10,
+        offset : 0
+    };
 
     var repsEndpoint = "https://reps.mozilla.org/api/v1/event/";
 
+    function encodeData(data){
+        return Object.keys(data).map(function(key){
+            return [key,data[key]].join("=");
+        }).join("&");
+    }
+
     return{
         getEvents : function (configObject) {
-            //base url
-            var url = new URL(repsEndpoint);
             //if the config is not correct
-            if (configObject != null && configObject != undefined && typeof configObject != 'object') return;
+            configObject = Helper.isValid(configObject) && typeof configObject != 'object' ? configObject : configFactory;
             //compose the url
-            Object.keys(configObject).forEach(function(key){
-                url.searchParams.append(key,configObject[key])
-            });
+            urlParams = encodeData(configObject);
+            url = urlParams != "" ? repsEndpoint + "?" + urlParams : repsEndpoint;
+            console.log(url);
             //build the promise
             return $.ajax({
                 url : url,
@@ -22,7 +40,7 @@ var API = (function(){
             });
         },
         italianApps : function(){
-            //TODO : get the
+            //TODO : get apps JSON
         }
     }
 })();
