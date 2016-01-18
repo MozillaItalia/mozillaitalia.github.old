@@ -22,7 +22,7 @@ function getItalianEvents(){
             date = new Date(event.local_start);
             html += '<li>\
                         <div class="time">\
-                            <span class="day">' + date.getDay() + '</span>\
+                            <span class="day">' + date.getDate() + '</span>\
                             <span class="month">' + Helper.monthName(date.getMonth()).slice(0,3) + '</span>\
                             <span class="year">' + date.getFullYear() + '</span>\
                         </div>\
