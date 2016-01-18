@@ -20,6 +20,14 @@ function getItalianEvents(){
         html = "";
         events.reverse().forEach(function(event){
             date = new Date(event.local_start);
+            categories = '';
+            if(event.categories.length > 0) {
+                categories = ' - <span class="event-category">';
+                event.categories.forEach(function(category){
+                    categories += category.name + ', ';
+                });
+                categories += '</span>';
+            }
             html += '<li>\
                         <div class="time">\
                             <span class="day">' + date.getDate() + '</span>\
@@ -27,10 +35,10 @@ function getItalianEvents(){
                             <span class="year">' + date.getFullYear() + '</span>\
                         </div>\
                         <div class="event-content">\
-                            <h3 class="event-title">' + event.name + '</h3>\
-                            <p class="event-description">' + event.description + '</p>\
+                            <h3 class="event-title"><a href=" ' + event.event_url + '">' + event.name + '</a></h3>\
+                            <p class="event-description">' + event.description + '</p><br>\
                             <span class="event-location">' + event.city + '</span>\
-                            <span class="event-link"><a href=" ' + event.event_url + '">Link</a></span>\
+                            ' + categories + '\
                         </div>\
                         </li>';
         });

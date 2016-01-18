@@ -1,21 +1,25 @@
 .event-list{
     list-style: none;
+    width: 90%;
 }
 
 .event-list > li{
     position: relative;
     padding: 0 0 0 10px;
     margin: 0 0 20px 10%;
-    border-left: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
     display: inline-block;
+    width: 80%;
 }
 
 .event-list > li > .time{
     position: relative;
+    padding-top:5px;
     float: left;
     display: inline-block;
-    height: 100%;
+    height: 90px;
     background: orangered;
+    width:95px;
 }
 .event-list > li > .time > span{
     position: relative;
@@ -41,36 +45,33 @@
     position: relative;
     float: left;
     padding: 0;
-    margin: 0 5px;
-    width: 80%;
+    margin: 0 10px;
+    width: 85%;
 }
 .event-list > li > .event-content > .event-title{
     margin: 0;
     position: relative;
-    float: left;
     padding:0;
     font-size: 25pt;
     line-height: 25pt;
     display: block;
-
+}
+.event-list > li > .event-content > .event-title a{
+    color: #000;
+    font-weight:bold;
 }
 .event-list > li > .event-content > .event-description{
-    position: relative;
     display: inline-block;
     padding: 0;
     margin: 0;
 }
 .event-list > li > .event-content > .event-location{
-    position: relative;
-    display: block;
     margin: 0;
     padding: 0;
     color: #00b3ee;
 }
-.event-list > li > .event-content > .event-link{
-    position: relative;
-    display: inline-block;
+.event-list > li > .event-content > .event-category{
     margin: 0;
     padding: 0;
-    color: #0f7c67;
+    color: #03779E;
 }
