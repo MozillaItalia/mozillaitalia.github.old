@@ -18,7 +18,7 @@ function getItalianEvents(){
     API.getEvents(config).done(function(success){
         events = success.objects;
         html = "";
-        events.forEach(function(event){
+        events.reverse().forEach(function(event){
             date = new Date(event.local_start);
             html += '<li>\
                         <div class="time">\

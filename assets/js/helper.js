@@ -22,7 +22,7 @@ var Helper = (function(){
             return el != null && el != undefined;
         },
         monthName : function(index){
-            return months[index-1];
+            return months[index];
         }
     }
 })();
